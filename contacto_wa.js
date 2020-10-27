@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     sendConatctWaVoices = (token) => {
         try{
-            fetch('https://dev.cntme.me?token='+token)
+            fetch('https://dev.cntme.me/'+token)
             .then(response => response.json())
             .then(data => console.log(data));
         }catch(e){
