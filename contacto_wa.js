@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     sendConatctWaVoices = (token) => {
         try{
-            fetch('https://dev.cntme.me/'+token)
+            fetch('https://cntme.me/'+token)
             .then(response => {
                 window.open(`https://wa.me/521${number}?text=${encodeURI(message)}`, '_blank');
                 response.json()
